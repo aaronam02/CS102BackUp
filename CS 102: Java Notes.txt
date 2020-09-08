@@ -1,0 +1,25 @@
+CS 102: Java Notes
+
+cant have a class in a class
+
+csave class name as files ommand N = new file
+
+comment in java is /*{comment}*/ or {command + /}
+trouble sho0ting? restart VSC
+
+assignment file example
+[
+
+public class *question #* {
+  public static void main(String[] args) {
+    {code under}
+  }
+}
+
+ex: 
+[ public class Q_01{
+    public static void main(String[] args) {
+        System.out.println("helloooe");
+    }
+}]
+]

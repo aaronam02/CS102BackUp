@@ -21,7 +21,7 @@ public class PP_8_1{
         // System.out.println(num);
             nums.add(num);
         Collections.sort(nums); // helps make it easier to loop through
-        System.out.println(nums); // help visulaze whats in the array
+        // System.out.println(nums); // help visulaze whats in the array
 
         int [] array = new int[nums.size()];
         for (int i =0; i<nums.size(); i++){
@@ -46,7 +46,7 @@ public class PP_8_1{
         for (int a = 1; a< array.length; a++){
             if ( (array[a] - array[a-1]) > 1  ){
                 allEntries = false;
-                System.out.println(array[a-1]+1 + " does not exist in the array nums");
+                // System.out.println(array[a-1]+1 + " does not exist in the array nums");
                 //helps visulaze why its taking so long and understand outputs better
                 return allEntries;
             }else {

@@ -39,9 +39,11 @@ public class PP_8_3{
             }
             String stars = "";
             int counter = 0;
-            while (counter <= count)
+            while (counter <= count )
             {//coudn't just do count*("x") like I could've in python
-                stars+="*";
+                if (counter > 0){
+                stars+="*"; 
+                }
                 counter = counter + 1;
             }
             if(i-10< 10){//fixes allignment

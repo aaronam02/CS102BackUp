@@ -1,3 +1,7 @@
+// Aaron Amankwaah
+// 09/09/2020
+// PP 8.2
+
 import java.util.ArrayList;
 import java.util.*;
 
@@ -6,7 +10,7 @@ public class PP_8_2{
 // Modify the program from PP 8.1 so that it works for
 // numbers in the range between -25 and 25.
     public static void main(String[] args){
-       System.out.println("this is question 2");
+       System.out.println("Programing Project 8.2 by Aaron Amankwaah");
        ArrayList<Integer> nums = new ArrayList<Integer>();
        boolean allEntries = false;
        while ( allEntries == false ) {

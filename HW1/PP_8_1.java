@@ -1,3 +1,7 @@
+// Aaron Amankwaah
+// 09/09/2020
+// PP 8.1
+
 import java.util.ArrayList;
 import java.util.*;
 
@@ -7,8 +11,8 @@ public class PP_8_1{
 // of the input by a value outside of the range. After all input has been processed, print
 // all of the values (with the number of occurrences) that were entered one or more times.
     public static void main(String[] args){
-    //    System.out.println("this is question 1");
-       ArrayList<Integer> nums = new ArrayList<Integer>();
+        System.out.println("Programing Project 8.1 by Aaron Amankwaah");
+        ArrayList<Integer> nums = new ArrayList<Integer>();
         boolean allEntries = false;
         while ( allEntries == false ) {
         // System.out.println(num);

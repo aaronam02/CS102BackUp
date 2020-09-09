@@ -2,14 +2,12 @@ import java.util.ArrayList;
 import java.util.*;
 
 public class PP_8_1{
-// PP 8.1 Write a program that reads an arbitrary number of
-// integers that are in the range 0 to 50 inclusive and counts how
-// many occurrences of each are entered. Indicate the end of the
-// input by a value outside of the range. After all input has been
-// processed, print all of the values (with the number of
-// occurrences) that were entered one or more times.
+// PP 8.1 Write a program that reads an arbitrary number of integers that are in the range 
+// 0 to 50 inclusive and counts how many occurrences of each are entered. Indicate the end 
+// of the input by a value outside of the range. After all input has been processed, print
+// all of the values (with the number of occurrences) that were entered one or more times.
     public static void main(String[] args){
-       System.out.println("this is question 1");
+    //    System.out.println("this is question 1");
        ArrayList<Integer> nums = new ArrayList<Integer>();
         boolean allEntries = false;
         while ( allEntries == false ) {
@@ -31,15 +29,10 @@ public class PP_8_1{
         for (int i =0; i<nums.size(); i++){
             array[i]= nums.get(i);
         }
-        // for( int i = 0; i <array.length; i++){
-        //     if(array[i] < array[array.length-1] ){
-        //         System.out.println( i + " appears " + countNum(array, i) + " times in the arbituary.");
-        //     }
-        // }
-        for( int i : array){
-            // if (i != i ){
+        for( int i = 0; i <array.length; i++){
+            if( countNum(array, i) > 0 ){//just prints how many times 0-50 are in array.
                 System.out.println( i + " appears " + countNum(array, i) + " times in the arbituary.");
-            // }
+            }
         }
     }
     
@@ -69,5 +62,4 @@ public class PP_8_1{
         } 
         return count;
     }
-        
 }

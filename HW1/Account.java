@@ -1,14 +1,14 @@
-
+import java.util.ArrayList;
 public class Account{
     private final double RATE = 0.03; // interest rate of 3.0%
     private long acctNumber;
     private double balance;
     private String name;
-    
     public Account(String owner, long account, double initial){
         name = owner;
         acctNumber = account;
         balance = initial;
+        
         }
         public double depositMoney(double amount){
         balance = balance + amount;
@@ -20,9 +20,10 @@ public class Account{
         return balance;
         }
         
-        public double addInterest(){
+        public void addInterest(){
+        // adds interest to all account
         balance = balance + (balance * RATE);
-        return balance;
+        // return balance;
         }
         
         public double getBalance(){
@@ -38,8 +39,8 @@ public class Account{
 
         public String getAccountInfo(){
             String info = "This account belongs to " + getName(); 
-            info += ". \n This account number is: " + getAccNum();
-            info +=". \n Your account has a balance of $"+ getBalance();
+            info += ". \nThis account number is: " + getAccNum();
+            info +=". \nYour account has a balance of $"+ getBalance();
     
             return info;
             }

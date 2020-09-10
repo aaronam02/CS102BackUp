@@ -4,7 +4,7 @@
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import Account;
+import Account;//althugh has error when you click proceed it still works
 
 public class PP_8_6{
 // PP 8.6 The L&L Bank can handle up to 30 customers who havesavings accounts. 
@@ -16,9 +16,22 @@ public class PP_8_6{
 
     public static void main(String[] args) {
         System.out.println("Programing Project 8.6 by Aaron Amankwaah");
-        Account tommy = new Account("Thomas", ( (int) Math.random()*10000000), 10000.09);
-        tommy.addInterest();
+        ArrayList<Account> accounts = new ArrayList<Account>();
+        Account tommy = new Account("Thomas", ( (int) (Math.random()*100000000)), 10000.09);
+        System.out.println(tommy.getAccountInfo());
+        System.out.println();
+        accounts.add(tommy);
+        payInterest(accounts);
+        System.out.println(tommy.getAccountInfo());
         }
+
+    static void payInterest(ArrayList<Account> accounts){
+        // adds interest to all account
+        for (Account i : accounts){
+            i.addInterest();
+        }
+
+    }
 
 
 }

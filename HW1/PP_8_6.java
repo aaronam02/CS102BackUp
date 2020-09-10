@@ -16,12 +16,13 @@ public class PP_8_6{
 
     public static void main(String[] args) {
         System.out.println("Programing Project 8.6 by Aaron Amankwaah");
-        ArrayList<Account> accounts = new ArrayList<Account>();
+        ArrayList<Account> accounts = new ArrayList<Account>();// stores all accounts
         Account tommy = new Account("Thomas", ( (int) (Math.random()*100000000)), 10000.09);
+        //random number assigns a random account #
         System.out.println(tommy.getAccountInfo());
         System.out.println();
-        accounts.add(tommy);
-        payInterest(accounts);
+        accounts.add(tommy);// adds tommy's account to database
+        payInterest(accounts); // adds interest to all account
         System.out.println(tommy.getAccountInfo());
         }
 

@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 public class Account{
     private final double RATE = 0.03; // interest rate of 3.0%
     private long acctNumber;

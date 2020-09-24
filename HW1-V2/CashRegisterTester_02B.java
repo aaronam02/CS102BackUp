@@ -13,7 +13,7 @@ import java.util.*;
 
 public class CashRegisterTester_02B{
 public static void main(String[] args){
-    System.out.println("This is Homeowrk 1 - Question #2. By Aaron Amankwaah, Output Below!");
+    System.out.println("This is Homeowrk 1 - Question #3. By Aaron Amankwaah, Output Below! \n");
     CashRegister_02B register1 = new CashRegister_02B();
     register1.addItem(1.95);
     register1.addItem(.95);
@@ -22,17 +22,24 @@ public static void main(String[] args){
     System.out.println("Expected count: 3\n");
     System.out.printf("Actual total: %1.0f\n", register1.getTotal());
     System.out.printf("Expected total:5.40\n");
+    register1.displayAll();
+    System.out.println("\nNumber of sales: " + register1.getSalesCount());
+    System.out.println("Total sales: " + register1.getSalesTotal());
+
 }
 
 public static class CashRegister_02B{
 private  ArrayList<Double> items;
+private int salesCount;
 //constructor
 public CashRegister_02B(){
 items = new ArrayList<Double>();
+salesCount =0;
 }
 //Add item to cash register
 public void addItem(double price){
  items.add(price);
+ salesCount++;
 }
 //Get total price for current sale
 public double getTotal(){
@@ -40,11 +47,9 @@ public double getTotal(){
     for (double item: items){
         totalPrice+= item;
     }
-// int total = ((int) (totalPrice*100));
-//  return total;
  return  (totalPrice*100);
-
 }
+
 public int getCount(){
  return items.size();
 }
@@ -54,6 +59,14 @@ public void clear(){
 public void displayAll(){
     System.out.println(items);
 }
-
+public int getSalesTotal(){
+    return salesCount;
+}
+public int getSalesCount(){
+    return salesCount;
+}
+public void resetSales(){
+    salesCount = 0;
+}
 }
 }

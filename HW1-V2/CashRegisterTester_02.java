@@ -13,7 +13,7 @@ import java.util.*;
 
 public class CashRegisterTester_02{
 public static void main(String[] args){
-    System.out.println("This is Homeowrk 1 - Question #2. By Aaron Amankwaah, Output Below!");
+    System.out.println("This is Homeowrk 1 - Question #2. By Aaron Amankwaah, Output Below! \n");
     CashRegister_02 register1 = new CashRegister_02();
     register1.addItem(1.95);
     register1.addItem(.95);
@@ -22,6 +22,7 @@ public static void main(String[] args){
     System.out.println("Expected count: 3\n");
     System.out.printf("Actual total: %1.0f\n", register1.getTotal());
     System.out.printf("Expected total:5.40\n");
+    register1.displayAll();
 }
 
 public static class CashRegister_02{

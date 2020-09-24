@@ -4,7 +4,7 @@
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import Account;//althugh has error when you click proceed it still works
+import Account.java;//althugh has error when you click proceed it still works
 
 public class PP_8_6{
 // PP 8.6 The L&L Bank can handle up to 30 customers who havesavings accounts. 

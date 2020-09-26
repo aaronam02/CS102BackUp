@@ -15,16 +15,29 @@ import java.util.ArrayList;
  class HW1_5{
     public static void main(String[] args) {
         System.out.println("This is Homeowrk 1 - Question #5. By Aaron Amankwaah, Output Below! \n");
-        Email test = new Email();
+        // Email name = new Email( SENDER, RECIEPieNT, SUBJECT );
+        ArrayList<Email> emails = new ArrayList<Email>();
+        Email test = new Email("aka110@rutgers.edu", "johnDoe@gmail.com", "HELLO!!!!!!!" );
+        emails.add(test);
+        test.message("You are awesome! \n\nSincerely, \nAaron Amankwaah.");
+        System.out.println(test.toString());
     }
-    // public class Email{
 
-    
-    
     public static class Email{
-    //constructor
-    public Email(){
+    private String sender, recepient, subject, emailMessage;
+    
+    public Email(String from, String to, String about ){
+        sender = from;
+        recepient = to;
+        subject = about;
     }
-
+    public void message(String text){
+        emailMessage = text;
     }
+    
+    public String toString(){
+        return  "From: " + sender + "\nTo " + recepient+ "\nAbout " + subject + 
+        "\n\n"+  emailMessage ;
+    }
+}
 }

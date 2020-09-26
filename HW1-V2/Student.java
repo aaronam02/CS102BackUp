@@ -13,9 +13,9 @@ import java.util.*;
 public class Student{
 public static void main(String[] args){
     System.out.println("This is Homeowrk 1 - Question #4. By Aaron Amankwaah, Output Below! \n");
-    ArrayList<Student> students = new ArrayList<Student> ();
-    Student jerry = new Student("Jerry",0.0);
-    students.add(jerry);
+    // ArrayList<Student> students = new ArrayList<Student> ();
+    Student jerry = new Student("Jerry", 0.0);
+    add(jerry);
     jerry.addQuiz(86);
     jerry.getTotalScore();
     jerry.getAverageScore();
@@ -33,25 +33,28 @@ public static void main(String[] args){
 public static class Student{
 private ArrayList<Double> quizzes = new ArrayList<Double> ();
 private String name; double quizTotal;
-
+private ArrayList<Student> students = new ArrayList<Student> ();
 //constructor
-public Student(String name, double quizTotal){
+public  Student(String name, double quizTotal){
 name = name;
 quizTotal = quizTotal;
 }
+public  addStudent(Student identifier) {
+    students.add(identifier);
+    }
 //Add item to cash register
-public void addQuiz(int score){
+public  void addQuiz(int score){
  quizzes.add(score);
  quizTotal += score;
 }
 //Get total price for current sale
-public int getTotalScore(){
+public  int getTotalScore(){
     return quizTotal;
 }
-public double getAverageScore(){
+public  double getAverageScore(){
  return quizTotal/quizzes.size();
 }
-public String getName(){
+public  String getName(){
     return name;
 }
 

@@ -9,9 +9,8 @@
 
 
 import java.util.ArrayList;
-import java.util.*;
 
-public class CashRegisterTester_02{
+public class HW1_2{
 public static void main(String[] args){
     System.out.println("This is Homeowrk 1 - Question #2. By Aaron Amankwaah, Output Below! \n");
     CashRegister_02 register1 = new CashRegister_02();

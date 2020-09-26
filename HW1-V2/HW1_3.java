@@ -9,9 +9,8 @@
 // day’s sales start from zero.
 
 import java.util.ArrayList;
-import java.util.*;
 
-public class CashRegisterTester_02B{
+public class HW1_3{
 public static void main(String[] args){
     System.out.println("This is Homeowrk 1 - Question #3. By Aaron Amankwaah, Output Below! \n");
     CashRegister_02B register1 = new CashRegister_02B();

@@ -13,7 +13,6 @@ import java.util.ArrayList;
 public class Appointment {
     String event;
     int year, month, day;
-    final ArrayList<Appointment>  appointments = new ArrayList<Appointment>();
 
     // Appointment("homework due for CS", 2020, 20, 20);
 
@@ -40,15 +39,15 @@ public class Appointment {
     public String toString(){
         return getEvent() + " happens on mm/dd/yyy" + getMonth()+ "/"+ getDay()+ "/" +getYear();
     }
-    static Appointment occursOn(int year, int mon, int day){
+    public static Appointment occursOn(int year, int mon, int day ){
         ArrayList<Appointment> eventsOnDay = new ArrayList<Appointment>();
         for (int i = 0; i< appointments.size(); i++){
             if((appointments.get(i).getYear()== year) && (appointments.get(i).getMonth()== mon) && (appointments.get(i).getDay()== day)){
             System.out.println(appointments.get(i));
             eventsOnDay.add(appointments.get(i));
             }
-            
         }
+        return eventsOnDay;
     }
 
 }

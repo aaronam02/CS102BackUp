@@ -10,7 +10,8 @@ public class ShapeTester{
  try
  {
  Scanner scan = new Scanner (new File("shapes.dat"));
- double width, length, height, side, radius;
+ double  height, side;
+ // double width, length, height, side, radius;
  // Read the data from the input file
  while (scan.hasNext())
  {

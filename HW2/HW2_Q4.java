@@ -15,7 +15,7 @@ public class HW2_Q4{
     System.out.println("HW_Q4 Output Below!! \n");
 
     try{
-        Scanner scan = new Scanner (new File("HW2_Q.java" ));
+        Scanner scan = new Scanner (new File("HW2_Q4.java" ));
         //how can I make it take multiple files?
         // Read the data from the input file
         // while (scan.hasNext()){

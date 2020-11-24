@@ -1,0 +1,4 @@
+pacakage FinalProject
+
+Java Fx with Deposit, Mini Statement, Transfer, Withdrawal, and Balance Inquiry. 
+Those are the parts we have to do for the final project.

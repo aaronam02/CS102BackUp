@@ -1,7 +1,5 @@
 package HW2_Q5;
 
-
-
 public class BankAccountTester {
   
 	public static void main(String[] args) {

@@ -26,18 +26,22 @@ public class RobotFace extends Group
         ears.setArcHeight(10);
         ears.setArcWidth(10);
 
-        Rectangle eye1 = new Rectangle(25, 15, 20, 10);
+        Circle eye1 = new Circle(30, 15, 10);
         eye1.setFill(Color.GOLD);
         
-        Rectangle eye2 = new Rectangle(65, 15, 20, 10);
+        Circle eye2 = new Circle(80, 15, 10);
         eye2.setFill(Color.GOLD);
         
         Rectangle nose = new Rectangle(52, 25, 6, 15);
         nose.setFill(Color.BLACK);
         
-        Rectangle mouth = new Rectangle(35, 45, 40, 10);
-        mouth.setFill(Color.RED);
+        Rectangle mouth1 = new Rectangle(35, 45, 40, 10);
+        mouth1.setFill(Color.RED);
         
-        getChildren().addAll(ears, head, eye1, eye2, nose, mouth);        
+        Rectangle mouth2 = new Rectangle(35, 58, 40, 10);
+        mouth2.setFill(Color.RED);
+
+        
+        getChildren().addAll(ears, head, eye1, eye2, nose, mouth1, mouth2);        
     }    
 }

@@ -1,4 +1,5 @@
 package FinalProject;
+
 // Write a class BankAccount, with two subclasses, Savings and Checking that inherit from it.
 // Savings account holders earn an interest of 1.5% and maintain a minimum of $1000 to avoid
 // monthly service charges of $15.00. Checking account holders are not required to maintain $500
@@ -48,6 +49,6 @@ public  class BankAccount{
 		withdraw = deposit = serviceCharge = 0;
 	}
 	public String toString(){
-return  "Account name: "+accountName+"\t\t"+"Account number: "+accountNumber+"\n"+"Account balance: "+fmt.format(balance)+"\t\t"+ "Number of monthly deposits: "+depNum+"\n"+"Number of monthly withdrawals: "+witNum+"\t\t"+"Service charge: "+serviceCharge;	
+return  "Account name: "+accountName+"\n"+"Account number: "+accountNumber+"\n"+"Account balance: "+fmt.format(balance)+"\n"+"Service charge: "+serviceCharge;	
 	}
 }

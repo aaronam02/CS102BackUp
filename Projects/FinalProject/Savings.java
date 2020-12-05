@@ -53,6 +53,12 @@ public  class Savings extends BankAccount{
 		balance -=withdraw;
 		witNum++;
 	}
+	public String transfer(Savings account1, double amt, Savings account2){//Abstract method
+		account1.withdraw(amt);
+		account2.deposit(amt);
+		return(account1.accountName + " sent $" +amt+" to "+ account2.accountName); 
+		
+		}
 	public void monthlyProcess(double ser){
 		System.out.println("Number of monthly withdrawals : " + witNum);
 		System.out.println("Number of monthly deposits : " + depNum);

@@ -37,6 +37,13 @@ public  class BankAccount{
 	
 	public  void withdrawn(double wit){}		//Abstract method
 	
+	public String transfer(BankAccount account1, double amt, BankAccount account2){//Abstract method
+		// account1.withdraw(amt);
+		// account2.deposit(amt);
+		// //wors but not with javafx
+		return(account1.accountName + " sent $" +amt+" to "+ account2.accountName); 
+		
+		}
 	public  void calcInterest(){
 		double Monthly_rate =  Annual_rate/12;
 		double Monthly_Interest = balance*Monthly_rate;

@@ -53,6 +53,13 @@ public class Checking extends BankAccount {
 		balance -=withdraw;
 		witNum++;
 	}
+   
+	public String transfer(Checking account1, double amt, Checking account2){//Abstract method
+		account1.withdraw(amt);
+		account2.deposit(amt);
+		return(account1.accountName + " sent $" +amt+" to "+ account2.accountName); 
+		
+		}
 	public String monthlyProcess(){
 		return ("\nNumber of monthly withdrawals : " + witNum + "\nNumber of monthly deposits : " + depNum);
 	}
